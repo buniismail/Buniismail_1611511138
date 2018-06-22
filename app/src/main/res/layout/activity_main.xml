@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtA"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtB"
+        android:layout_below="@+id/txtA"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="180px"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/btnTambah"
+        android:layout_below="@+id/txtB"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtC"
+        android:layout_below="@+id/btnTambah"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/txtB" />
+
+    <Button
+        android:layout_width="180px"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/btnKurang"
+        android:layout_below="@+id/txtB"
+        android:layout_toRightOf="@+id/btnTambah" />
+
+
+    <Button
+        android:layout_width="180px"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:id="@+id/btnKali"
+        android:layout_below="@+id/txtB"
+        android:layout_toLeftOf="@+id/btnBagi"
+        android:layout_toRightOf="@+id/btnKurang"/>
+
+
+    <Button
+        android:layout_width="180px"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:id="@+id/btnBagi"
+        android:layout_below="@+id/txtB"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buni Ismail - 1611511138"
+        android:id="@+id/textView"
+        android:layout_below="@+id/btnExit"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:id="@+id/btnExit"
+        android:layout_below="@+id/txtC"
+        android:layout_toRightOf="@+id/btnTambah"
+        android:layout_alignRight="@+id/btnKali"
+        android:layout_alignEnd="@+id/btnKali" />
+
+</RelativeLayout>
